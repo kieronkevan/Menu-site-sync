@@ -98,7 +98,7 @@ async function main() {
   };
 
   const output = { info, items };
-  const outPath = path.join(__dirname, "..", "site", "menu-data.json");
+  const outPath = path.join(__dirname, "..", "docs", "menu-data.json");
   fs.writeFileSync(outPath, JSON.stringify(output, null, 2));
   console.log(`Wrote ${items.length} items to ${outPath}`);
 }
