@@ -1,1 +1,67 @@
 
+{
+  "info": {
+    "name": "Golden Wok",
+    "address": "12 High Street, Anytown",
+    "hours": "Mon\u2013Sun 5\u201310:30pm",
+    "phone": "01234 567 890",
+    "notice": "Closed 25\u201326 Dec for Christmas",
+    "noticeActive": true
+  },
+  "items": [
+    {
+      "name": "Sweet & sour chicken balls",
+      "category": "Chef specials",
+      "price": "\u00a36.50",
+      "description": "Battered chicken, sweet & sour sauce",
+      "available": true,
+      "tags": [],
+      "sortOrder": 1
+    },
+    {
+      "name": "Salt & pepper chips",
+      "category": "Salt and pepper dishes",
+      "price": "\u00a34.20",
+      "description": "Chips tossed in salt, pepper, chilli, onion",
+      "available": true,
+      "tags": ["Spicy"],
+      "sortOrder": 2
+    },
+    {
+      "name": "Chicken curry & chips",
+      "category": "English meals",
+      "price": "\u00a35.90",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 3
+    },
+    {
+      "name": "Battered sausage",
+      "category": "English meals",
+      "price": "\u00a32.50",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 4
+    },
+    {
+      "name": "Salt & pepper ribs",
+      "category": "Salt and pepper dishes",
+      "price": "\u00a36.80",
+      "description": "",
+      "available": false,
+      "tags": ["Spicy"],
+      "sortOrder": 5
+    },
+    {
+      "name": "Prawn crackers",
+      "category": "Sides",
+      "price": "\u00a32.00",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 6
+    }
+  ]
+}
