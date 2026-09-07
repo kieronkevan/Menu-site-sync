@@ -1,66 +1,569 @@
 {
   "info": {
-    "name": "Golden Wok",
+    "name": "Zhejiang Garden",
     "address": "12 High Street, Anytown",
-    "hours": "Mon\u2013Sun 5\u201310:30pm",
-    "phone": "01234 567 890",
-    "notice": "Closed 25\u201326 Dec for Christmas",
+    "hours": "Mon–Sun 5–10:30pm",
+    "phone": "07934 703438",
+    "notice": "Closed 25–26 Dec for Christmas",
     "noticeActive": true
   },
   "items": [
     {
-      "name": "Sweet & sour chicken balls",
-      "category": "Chef specials",
-      "price": "\u00a36.50",
-      "description": "Battered chicken, sweet & sour sauce",
+      "name": "King Prawn Satay",
+      "category": "Satay Dishes",
+      "price": "£6.20",
+      "description": "",
       "available": true,
-      "tags": [],
-      "sortOrder": 1
+      "tags": [
+        "Contains nuts"
+      ],
+      "sortOrder": 48
     },
     {
-      "name": "Salt & pepper chips",
-      "category": "Salt and pepper dishes",
-      "price": "\u00a34.20",
-      "description": "Chips tossed in salt, pepper, chilli, onion",
+      "name": "Prawn Satay",
+      "category": "Satay Dishes",
+      "price": "£5.70",
+      "description": "",
       "available": true,
-      "tags": ["Spicy"],
+      "tags": [
+        "Contains nuts"
+      ],
+      "sortOrder": 53
+    },
+    {
+      "name": "Chicken Oyster",
+      "category": "Oyster Dishes",
+      "price": "£5.70",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 44
+    },
+    {
+      "name": "Duck Satay",
+      "category": "Satay Dishes",
+      "price": "£6.20",
+      "description": "",
+      "available": true,
+      "tags": [
+        "Contains nuts"
+      ],
+      "sortOrder": 49
+    },
+    {
+      "name": "Beef Satay",
+      "category": "Satay Dishes",
+      "price": "£5.70",
+      "description": "",
+      "available": true,
+      "tags": [
+        "Contains nuts"
+      ],
+      "sortOrder": 50
+    },
+    {
+      "name": "Beef Oyster",
+      "category": "Oyster Dishes",
+      "price": "£5.70",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 43
+    },
+    {
+      "name": "Beef Chop Suey",
+      "category": "Chop Suey Dishes",
+      "price": "£5.70",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 35
+    },
+    {
+      "name": "Duck Oyster",
+      "category": "Oyster Dishes",
+      "price": "£6.20",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 42
+    },
+    {
+      "name": "King Prawn Chop Suey",
+      "category": "Chop Suey Dishes",
+      "price": "£6.20",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 33
+    },
+    {
+      "name": "Special Chop Suey",
+      "category": "Chop Suey Dishes",
+      "price": "£6.20",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 32
+    },
+    {
+      "name": "Char Sui Oyster",
+      "category": "Oyster Dishes",
+      "price": "£5.70",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 45
+    },
+    {
+      "name": "King Prawn Oyster",
+      "category": "Oyster Dishes",
+      "price": "£6.20",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 41
+    },
+    {
+      "name": "Prawn Oyster",
+      "category": "Oyster Dishes",
+      "price": "£5.70",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 46
+    },
+    {
+      "name": "Special Oyster",
+      "category": "Oyster Dishes",
+      "price": "£6.20",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 40
+    },
+    {
+      "name": "Chicken Chop Suey",
+      "category": "Chop Suey Dishes",
+      "price": "£5.70",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 36
+    },
+    {
+      "name": "Duck Chop Suey",
+      "category": "Chop Suey Dishes",
+      "price": "£6.20",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 34
+    },
+    {
+      "name": "Char Sui Chop Suey",
+      "category": "Chop Suey Dishes",
+      "price": "£5.70",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 37
+    },
+    {
+      "name": "Char Sui Satay",
+      "category": "Satay Dishes",
+      "price": "£5.70",
+      "description": "",
+      "available": true,
+      "tags": [
+        "Contains nuts"
+      ],
+      "sortOrder": 52
+    },
+    {
+      "name": "Special Satay",
+      "category": "Satay Dishes",
+      "price": "£6.20",
+      "description": "",
+      "available": true,
+      "tags": [
+        "Contains nuts"
+      ],
+      "sortOrder": 47
+    },
+    {
+      "name": "Vegetables Chop Suey",
+      "category": "Chop Suey Dishes",
+      "price": "£5.40",
+      "description": "",
+      "available": true,
+      "tags": [
+        "Vegetarian"
+      ],
+      "sortOrder": 39
+    },
+    {
+      "name": "Prawn Chop Suey",
+      "category": "Chop Suey Dishes",
+      "price": "£5.70",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 38
+    },
+    {
+      "name": "Chicken Satay",
+      "category": "Satay Dishes",
+      "price": "£5.70",
+      "description": "",
+      "available": true,
+      "tags": [
+        "Contains nuts"
+      ],
+      "sortOrder": 51
+    },
+    {
+      "name": "Wonton Soup",
+      "category": "Soup",
+      "price": "£3.40",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 16
+    },
+    {
+      "name": "Crispy Aromatic Duck (with Pancakes)",
+      "category": "Starters & Appetisers",
+      "price": "£16.00",
+      "description": "Quarter portion also available for £8.50",
+      "available": true,
+      "tags": [],
       "sortOrder": 2
     },
     {
-      "name": "Chicken curry & chips",
-      "category": "English meals",
-      "price": "\u00a35.90",
+      "name": "Chicken Wings (Plain) (6)",
+      "category": "Starters & Appetisers",
+      "price": "£3.40",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 10
+    },
+    {
+      "name": "Salt & Pepper Spring Rolls",
+      "category": "Salt & Pepper Appetisers",
+      "price": "£3.40",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 24
+    },
+    {
+      "name": "Wonton Noodle Soup",
+      "category": "Soup",
+      "price": "£3.90",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 15
+    },
+    {
+      "name": "Crab Meat & Sweetcorn Soup",
+      "category": "Soup",
+      "price": "£2.50",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 13
+    },
+    {
+      "name": "Salt & Pepper Mix",
+      "category": "Salt & Pepper Appetisers",
+      "price": "£4.00",
+      "description": "3 x Sui Mai, 3 x Chicken Wings",
+      "available": true,
+      "tags": [],
+      "sortOrder": 20
+    },
+    {
+      "name": "Salt & Pepper Squid",
+      "category": "Salt & Pepper Appetisers",
+      "price": "£4.40",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 26
+    },
+    {
+      "name": "Spring Rolls",
+      "category": "Starters & Appetisers",
+      "price": "£2.90",
+      "description": "",
+      "available": true,
+      "tags": [
+        "Vegetarian"
+      ],
+      "sortOrder": 7
+    },
+    {
+      "name": "King Do Ribs",
+      "category": "Ribs",
+      "price": "£5.90",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 31
+    },
+    {
+      "name": "BBQ Ribs",
+      "category": "Ribs",
+      "price": "£5.70",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 30
+    },
+    {
+      "name": "Noodle Soup",
+      "category": "Soup",
+      "price": "£2.60",
+      "description": "",
+      "available": true,
+      "tags": [
+        "Vegetarian"
+      ],
+      "sortOrder": 18
+    },
+    {
+      "name": "Salt & Pepper Wings (6)",
+      "category": "Salt & Pepper Appetisers",
+      "price": "£4.00",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 27
+    },
+    {
+      "name": "Salt & Pepper Sui Mai (6)",
+      "category": "Salt & Pepper Appetisers",
+      "price": "£3.80",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 22
+    },
+    {
+      "name": "Salt & Pepper Nuggets (8)",
+      "category": "Salt & Pepper Appetisers",
+      "price": "£3.50",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 21
+    },
+    {
+      "name": "Sui Mai (6)",
+      "category": "Starters & Appetisers",
+      "price": "£3.40",
       "description": "",
       "available": true,
       "tags": [],
       "sortOrder": 3
     },
     {
-      "name": "Battered sausage",
-      "category": "English meals",
-      "price": "\u00a32.50",
+      "name": "Duck Spring Rolls (6)",
+      "category": "Starters & Appetisers",
+      "price": "£3.00",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 9
+    },
+    {
+      "name": "Salt & Pepper Combi Box (For 1 Person)",
+      "category": "Salt & Pepper Appetisers",
+      "price": "£7.90",
+      "description": "3 x Sui Mai, 3 x Chicken Wings, 6 x Chicken Pieces, Chips",
+      "available": true,
+      "tags": [],
+      "sortOrder": 19
+    },
+    {
+      "name": "Salt & Pepper Scallops",
+      "category": "Salt & Pepper Appetisers",
+      "price": "£2.50",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 28
+    },
+    {
+      "name": "Veg Spring Rolls",
+      "category": "Starters & Appetisers",
+      "price": "£2.70",
+      "description": "",
+      "available": true,
+      "tags": [
+        "Vegetarian"
+      ],
+      "sortOrder": 8
+    },
+    {
+      "name": "Hot & Sour Soup",
+      "category": "Soup",
+      "price": "£3.00",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 12
+    },
+    {
+      "name": "Toast Combi",
+      "category": "Starters & Appetisers",
+      "price": "£16.50",
+      "description": "4 x Sui Mai, 4 x Chicken Wings, BBQ Ribs, Crispy Won Ton, Spring Roll, Prawn Toast, BBQ Sauce or Sweet & Sour Sauce",
+      "available": true,
+      "tags": [],
+      "sortOrder": 1
+    },
+    {
+      "name": "Salt & Pepper Ribs",
+      "category": "Ribs",
+      "price": "£5.70",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 29
+    },
+    {
+      "name": "Chicken Noodle Soup",
+      "category": "Soup",
+      "price": "£3.50",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 17
+    },
+    {
+      "name": "Crispy Sui Mai (6)",
+      "category": "Starters & Appetisers",
+      "price": "£3.60",
       "description": "",
       "available": true,
       "tags": [],
       "sortOrder": 4
     },
     {
-      "name": "Salt & pepper ribs",
-      "category": "Salt and pepper dishes",
-      "price": "\u00a36.80",
+      "name": "Salt & Pepper Wonton",
+      "category": "Salt & Pepper Appetisers",
+      "price": "£3.40",
       "description": "",
-      "available": false,
-      "tags": ["Spicy"],
+      "available": true,
+      "tags": [],
+      "sortOrder": 23
+    },
+    {
+      "name": "Crispy Won Ton (6)",
+      "category": "Starters & Appetisers",
+      "price": "£2.90",
+      "description": "Includes sweet & sour dip",
+      "available": true,
+      "tags": [],
       "sortOrder": 5
     },
     {
-      "name": "Prawn crackers",
-      "category": "Sides",
-      "price": "\u00a32.00",
+      "name": "Char Sui Wonton Noodle Soup",
+      "category": "Soup",
+      "price": "£4.50",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 14
+    },
+    {
+      "name": "Salt & Pepper Chips",
+      "category": "Salt & Pepper Appetisers",
+      "price": "£3.00",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 25
+    },
+    {
+      "name": "Prawn Toast",
+      "category": "Starters & Appetisers",
+      "price": "£3.00",
       "description": "",
       "available": true,
       "tags": [],
       "sortOrder": 6
+    },
+    {
+      "name": "Chicken & Sweetcorn Soup",
+      "category": "Soup",
+      "price": "£2.40",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 11
+    },
+    {
+      "name": "Chicken curry & chips",
+      "category": "",
+      "price": "£5.90",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 3
+    },
+    {
+      "name": "Prawn crackers",
+      "category": "",
+      "price": "£2.00",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 6
+    },
+    {
+      "name": "Salt & pepper ribs",
+      "category": "",
+      "price": "£6.80",
+      "description": "",
+      "available": false,
+      "tags": [
+        "Spicy"
+      ],
+      "sortOrder": 5
+    },
+    {
+      "name": "Salt & pepper chips",
+      "category": "",
+      "price": "£4.20",
+      "description": "Chips tossed in salt, pepper, chilli, onion",
+      "available": true,
+      "tags": [
+        "Spicy"
+      ],
+      "sortOrder": 2
+    },
+    {
+      "name": "Battered sausage",
+      "category": "",
+      "price": "£2.50",
+      "description": "",
+      "available": true,
+      "tags": [],
+      "sortOrder": 4
+    },
+    {
+      "name": "Sweet & sour chicken balls",
+      "category": "",
+      "price": "£6.50",
+      "description": "Battered chicken, sweet & sour sauce",
+      "available": true,
+      "tags": [],
+      "sortOrder": 1
     }
   ]
 }
