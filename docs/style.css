@@ -23,10 +23,7 @@ body {
 .site-header {
   padding: 16px 20px;
   border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
   background: #fff;
-  z-index: 10;
 }
 
 .site-header h1 {
@@ -69,6 +66,10 @@ body {
   overflow-x: auto;
   border-bottom: 1px solid var(--border);
   -webkit-overflow-scrolling: touch;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 10;
 }
 
 .chip {
@@ -95,7 +96,7 @@ body {
 
 .category-section {
   margin-top: 20px;
-  scroll-margin-top: 130px;
+  scroll-margin-top: 60px;
 }
 
 .category-title {
