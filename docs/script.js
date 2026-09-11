@@ -1,10 +1,14 @@
+let allItems = [];
+
 async function loadMenu() {
   const res = await fetch("menu-data.json", { cache: "no-store" });
   const data = await res.json();
+  allItems = data.items;
   renderInfo(data.info);
   renderNotice(data.info);
   renderMenu(data.items);
   setupChipScroll();
+  setupSearch();
 }
 
 function renderInfo(info) {
@@ -36,7 +40,6 @@ function renderMenu(items) {
   menuEl.innerHTML = "";
   chipsEl.innerHTML = "";
 
-  // Group items by category, preserving first-seen order
   const categories = [];
   const grouped = {};
   items
@@ -141,6 +144,67 @@ function setupChipScroll() {
     { rootMargin: "-70px 0px -70% 0px" }
   );
   sections.forEach((s) => observer.observe(s));
+}
+
+function setupSearch() {
+  const input = document.getElementById("search-input");
+  const clearBtn = document.getElementById("search-clear");
+  const chips = document.getElementById("chips");
+  const menu = document.getElementById("menu");
+  const results = document.getElementById("search-results");
+
+  input.addEventListener("input", () => {
+    const query = input.value.trim().toLowerCase();
+    clearBtn.hidden = query.length === 0;
+
+    if (query.length === 0) {
+      results.hidden = true;
+      chips.hidden = false;
+      menu.hidden = false;
+      return;
+    }
+
+    chips.hidden = true;
+    menu.hidden = true;
+    results.hidden = false;
+    renderSearchResults(query);
+  });
+
+  clearBtn.addEventListener("click", () => {
+    input.value = "";
+    input.dispatchEvent(new Event("input"));
+    input.focus();
+  });
+}
+
+function renderSearchResults(query) {
+  const results = document.getElementById("search-results");
+  results.innerHTML = "";
+
+  const matches = allItems.filter(
+    (item) => item.available !== false && item.name.toLowerCase().includes(query)
+  );
+
+  const count = document.createElement("p");
+  count.className = "search-count";
+  count.textContent = matches.length
+    ? `${matches.length} dish${matches.length === 1 ? "" : "es"} match "${query}"`
+    : `No dishes match "${query}"`;
+  results.appendChild(count);
+
+  const list = document.createElement("div");
+  list.style.padding = "0 20px 24px";
+
+  matches.forEach((item) => {
+    const row = renderItemRow(item);
+    const category = document.createElement("p");
+    category.className = "search-result-category";
+    category.textContent = item.category;
+    row.querySelector("div").appendChild(category);
+    list.appendChild(row);
+  });
+
+  results.appendChild(list);
 }
 
 loadMenu();
