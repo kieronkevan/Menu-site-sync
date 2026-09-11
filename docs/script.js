@@ -138,7 +138,7 @@ function setupChipScroll() {
         }
       });
     },
-    { rootMargin: "-140px 0px -70% 0px" }
+    { rootMargin: "-70px 0px -70% 0px" }
   );
   sections.forEach((s) => observer.observe(s));
 }
