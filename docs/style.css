@@ -79,12 +79,12 @@ body {
   margin: 0 auto;
   background: #fff;
   z-index: 50;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
-.search-overlay[hidden] {
-  display: none;
+.search-overlay{
+  display: flex;
 }
 
 
