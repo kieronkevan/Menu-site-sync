@@ -152,15 +152,15 @@ function setupSearch() {
   const input = document.getElementById("search-input");
   const closeBtn = document.getElementById("search-close");
 
-  trigger.addEventListener("click", () => {
-    overlay.hidden = false;
+    trigger.addEventListener("click", () => {
+    overlay.classList.add("is-open");
     input.value = "";
     renderSearchResults("");
     input.focus();
   });
 
   closeBtn.addEventListener("click", () => {
-    overlay.hidden = true;
+    overlay.classList.remove("is-open");
     input.value = "";
   });
 
