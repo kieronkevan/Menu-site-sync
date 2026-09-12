@@ -147,39 +147,39 @@ function setupChipScroll() {
 }
 
 function setupSearch() {
+  const trigger = document.getElementById("search-trigger");
+  const overlay = document.getElementById("search-overlay");
   const input = document.getElementById("search-input");
-  const clearBtn = document.getElementById("search-clear");
-  const chips = document.getElementById("chips");
-  const menu = document.getElementById("menu");
-  const results = document.getElementById("search-results");
+  const closeBtn = document.getElementById("search-close");
 
-  input.addEventListener("input", () => {
-    const query = input.value.trim().toLowerCase();
-    clearBtn.hidden = query.length === 0;
-
-    if (query.length === 0) {
-      results.hidden = true;
-      chips.hidden = false;
-      menu.hidden = false;
-      return;
-    }
-
-    chips.hidden = true;
-    menu.hidden = true;
-    results.hidden = false;
-    renderSearchResults(query);
+  trigger.addEventListener("click", () => {
+    overlay.hidden = false;
+    input.value = "";
+    renderSearchResults("");
+    input.focus();
   });
 
-  clearBtn.addEventListener("click", () => {
+  closeBtn.addEventListener("click", () => {
+    overlay.hidden = true;
     input.value = "";
-    input.dispatchEvent(new Event("input"));
-    input.focus();
+  });
+
+  input.addEventListener("input", () => {
+    renderSearchResults(input.value.trim().toLowerCase());
   });
 }
 
 function renderSearchResults(query) {
   const results = document.getElementById("search-results");
   results.innerHTML = "";
+
+  if (query.length === 0) {
+    const prompt = document.createElement("p");
+    prompt.className = "search-count";
+    prompt.textContent = "Start typing to search the menu";
+    results.appendChild(prompt);
+    return;
+  }
 
   const matches = allItems.filter(
     (item) => item.available !== false && item.name.toLowerCase().includes(query)
@@ -192,19 +192,14 @@ function renderSearchResults(query) {
     : `No dishes match "${query}"`;
   results.appendChild(count);
 
-  const list = document.createElement("div");
-  list.style.padding = "0 20px 24px";
-
   matches.forEach((item) => {
     const row = renderItemRow(item);
     const category = document.createElement("p");
     category.className = "search-result-category";
     category.textContent = item.category;
     row.querySelector("div").appendChild(category);
-    list.appendChild(row);
+    results.appendChild(row);
   });
-
-  results.appendChild(list);
 }
 
 loadMenu();
