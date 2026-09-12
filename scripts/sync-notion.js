@@ -59,6 +59,10 @@ function getCheckbox(prop) {
   return !!(prop && prop.checkbox);
 }
 
+function getUrl(prop) {
+  return prop && prop.url ? prop.url : "";
+}
+
 function formatPrice(prop) {
   const n = getNumber(prop);
   return `\u00a3${n.toFixed(2)}`;
@@ -88,13 +92,15 @@ async function main() {
   const infoPages = await notionQuery(INFO_DB_ID);
   const infoPage = infoPages[0];
   const ip = infoPage ? infoPage.properties : {};
-  const info = {
+    const info = {
     name: getText(ip.Name) || "Menu",
     address: getText(ip.Address),
     hours: getText(ip["Opening hours"]),
     phone: getText(ip.Phone),
     notice: getText(ip.Notice),
     noticeActive: getCheckbox(ip["Notice active"]),
+    tripadvisorRating: getNumber(ip["Tripadvisor rating"]),
+    tripadvisorUrl: getUrl(ip["Tripadvisor url"]),
   };
 
   const output = { info, items };
