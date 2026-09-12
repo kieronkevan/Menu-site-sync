@@ -83,7 +83,7 @@ body {
   flex-direction: column;
 }
 
-.search-overlay{
+.search-overlay.is-open {
   display: flex;
 }
 
