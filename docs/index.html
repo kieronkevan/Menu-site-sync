@@ -16,11 +16,10 @@
   </a>
 </header>
 
-<div class="search-bar">
+<button id="search-trigger" class="search-trigger">
   <span class="search-icon" aria-hidden="true">&#128269;</span>
-  <input type="text" id="search-input" placeholder="Search dishes..." autocomplete="off">
-  <button id="search-clear" class="search-clear" hidden aria-label="Clear search">&times;</button>
-</div>
+  <span>Search dishes...</span>
+</button>
 
 <div class="notice" id="notice" hidden></div>
 
@@ -28,12 +27,19 @@
 
 <main id="menu"></main>
 
-<div id="search-results" hidden></div>
-
 <footer class="site-footer">
   <p id="footer-details"></p>
   <p><a id="footer-phone" href="tel:"></a></p>
 </footer>
+
+<div id="search-overlay" class="search-overlay" hidden>
+  <div class="search-overlay-header">
+    <span class="search-icon" aria-hidden="true">&#128269;</span>
+    <input type="text" id="search-input" placeholder="Search dishes..." autocomplete="off">
+    <button id="search-close" class="search-close">Cancel</button>
+  </div>
+  <div id="search-results"></div>
+</div>
 
 <script src="script.js"></script>
 </body>
