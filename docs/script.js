@@ -17,11 +17,18 @@ function renderInfo(info) {
   document.getElementById("shop-details").textContent = details;
   document.getElementById("footer-details").textContent = details;
 
-  const telHref = "tel:" + info.phone.replace(/\s+/g, "");
+    const telHref = "tel:" + info.phone.replace(/\s+/g, "");
   document.getElementById("phone-text").textContent = info.phone;
   document.getElementById("call-button").href = telHref;
   document.getElementById("footer-phone").href = telHref;
   document.getElementById("footer-phone").textContent = info.phone;
+
+  const badge = document.getElementById("tripadvisor-badge");
+  if (info.tripadvisorRating && info.tripadvisorUrl) {
+    document.getElementById("tripadvisor-text").textContent = info.tripadvisorRating;
+    badge.href = info.tripadvisorUrl;
+    badge.hidden = false;
+  }
 }
 
 function renderNotice(info) {
